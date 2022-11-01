@@ -13,12 +13,20 @@ body {
     z-index:-1;;
     
 }
+
+
+
+
+
+/* Create vs code */
 .firstContainer {
     background-color:white;
 }
 .vsCodeBody {
     display:flex;
     transition:transform 1s;
+    position:absolute;
+    z-index:1000;
     
 }
 .vsCodeGrow {
@@ -213,7 +221,16 @@ header {
 #highlight:hover {
     cursor:pointer;
 }
-/* Vs code text*/
+/* End vs code/*
+
+
+
+
+
+
+
+
+/* Vs code text Animation */
 
 .textBox {
     display:flex;
@@ -222,7 +239,7 @@ header {
     gap:1em;
     position:relative;
     font-size:1.5rem;
-    width:38vw;
+    width:32vw;
 }
 .firstContainer {
     width:100vw;
@@ -256,7 +273,7 @@ header {
     animation-delay:5s;
 }
 
-
+/* End vs code text animation */
 
 
 
@@ -267,6 +284,7 @@ header {
 
 
 /* Terminal */
+
 .terminalMain {
     height:100vh;
     width:100vw;
@@ -382,3 +400,5 @@ header {
         background-color:transparent;
     }
 }
+
+/* End Terminal */
