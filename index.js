@@ -77,5 +77,9 @@ setTimeout(() => {
 
 }, 3500)
 
-
+//Portfolio Body
+const portfolioBody = document.querySelector(".mainPortfolioBody")
+setTimeout (() => {
+    portfolioBody.style.display = "flex"
+}, 11000)
 
