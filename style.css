@@ -11,10 +11,19 @@ body {
     transition:transform 1s;
     
 }
-.removeFromBody {
-    transform:scale(0.2);
+.vsCodeBody {
+    display:flex;
+    transition:transform 1s;
+    
+}
+.vsCodeGrow {
+    transform: scale(0.1);
     transition:transform 1s;
 }
+/* .removeFromBody {
+    transform:scale(0.2);
+    transition:transform 1s;
+} */
 .textBox {
     width:70vw;
     height:2rem;
@@ -198,4 +207,121 @@ header {
 }
 #highlight:hover {
     cursor:pointer;
+}
+
+/* Terminal */
+.terminalMain {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(35, 34, 34);
+    background-image: url(macBackground.jpeg);
+    background-size:cover;
+    z-index:10000;
+    position:absolute;
+}
+.terminalBody {
+    width:50vw;
+    height:50vh;
+    background-color: white;
+    border-radius: 1em;
+}
+.terminalHeader {
+    width:100%;
+    border:1px solid rgb(179, 176, 176);
+    background-color:rgb(179, 176, 176);
+    border-radius: 1em 1em 0 0;
+    height:5%;
+    color:rgb(93, 91, 91);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.terminalButtons {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:100%;
+    width:20%;
+    gap:0.75em;
+    padding:1em;
+}
+.terminalButton {
+    border-radius: 100%;
+    height:1.15em;
+    width:1.15em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    
+}
+.terminalBashMessage {
+    width:60%;
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+    
+}
+#terminalIcon {
+    width:20px;
+}
+.red {
+    background-color:red;
+    cursor:pointer;
+}
+.yellow {
+    background-color:yellow;
+    cursor:pointer;
+}
+.green {
+    background-color:green;
+    cursor:pointer;
+}
+#terminalText {
+    display:flex;
+    flex-direction: column;
+    gap:0.3rem;
+    padding-left:0.5em;
+    
+    padding-top:0.25rem;
+    
+}
+.terminalLineTwo {
+    padding-right:0.5rem;
+}
+.terminalTypeLine {
+    display:flex;
+}
+.terminalTypeText {
+    position:relative;
+}
+.terminalTypeText::before,
+.terminalTypeText::after {
+    content: "";
+    inset:0;
+    position:absolute;
+    z-index: 1000;
+    background-color:white;
+}
+.terminalTypeText::before {
+    background-color:white;
+    animation: typewriter 2s steps(6) 1s forwards;
+    animation-delay:1s;
+}
+.terminalTypeText::after {
+    width: 0.125em;
+    background-color:black;
+    animation: typewriter 2s steps(6) 1s forwards, blink 700ms steps(6) infinite;
+}
+@keyframes typewriter {
+    to { 
+        left: 100%; }
+}
+@keyframes blink {
+    to {
+        background-color:transparent;
+    }
 }

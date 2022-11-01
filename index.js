@@ -62,4 +62,19 @@ function loadFunction() {
     body.classList.remove("removeFromBody")
 }
 
+// Terminal
+const terminalMain = document.querySelector(".terminalMain")
+const vsCodeBody = document.querySelector(".vsCodeBody")
+function vsCodeAppear() {
+    vsCodeBody.classList.remove("vsCodeGrow")
+    terminalMain.style.display = "none"
+    
+}
+
+
+setTimeout(() => {
+    vsCodeAppear()
+
+}, 3500)
+
 
