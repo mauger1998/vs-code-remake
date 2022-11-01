@@ -25,13 +25,18 @@ body {
     color:#2d2c33;
     left:-2.5rem;
     font-weight:500;
-    font-size:large
+    font-size:large;
 }
 .pageName {
     margin-left:2rem;
     padding-top:0.5em;
     height:max-content;
+    display:flex;
 }
+
+
+
+
 #blue {
     color:blue;
     font-weight: 500;
@@ -50,9 +55,19 @@ aside.blackAside {
     
 
 }
-.tabWrapper div {
+.htmlTab,
+.cssTab,
+.jsTab {
     border-right: 1px solid white;
     border-left: 1px solid white;
+}
+.addToTab {
+    
+    background-color:white;
+}
+
+.tabWrapper div {
+    
     height:100%;
     align-items: center;
     justify-content: center;
