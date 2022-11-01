@@ -5,6 +5,10 @@ const tabWrapper = document.querySelector(".tabWrapper")
 const htmlTab = document.querySelector(".htmlTab")
 const cssTab = document.querySelector(".cssTab")
 const jsTab = document.querySelector(".jsTab")
+const downArrow = document.getElementById("rotate")
+const downArrowContainer = document.getElementById("split")
+const explorerIcons = document.querySelectorAll("#secondFile")
+const body = document.querySelector("body")
 
 
 grayAsideFileArray.forEach(file => {
@@ -39,5 +43,20 @@ grayAsideFileArray.forEach(file => {
         }
     })
 })
+
+downArrow.addEventListener("click", (e) => {
+    downArrowContainer.classList.toggle("goBlue")
+    downArrow.classList.toggle("rotateArrow")
+    grayAsideFileArray.forEach(file => {
+        file.classList.toggle("filesDissapear")
+        
+
+    })
+    explorerIcons.forEach(icon => {
+        icon.classList.toggle("filesDissapear")
+    })
+})
+
+
 
 
