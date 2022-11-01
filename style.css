@@ -9,7 +9,12 @@
 body {
     display:flex;
     transition:transform 1s;
+    background-image: url(macBackground.jpeg);
+    z-index:-1;;
     
+}
+.firstContainer {
+    background-color:white;
 }
 .vsCodeBody {
     display:flex;
@@ -208,6 +213,58 @@ header {
 #highlight:hover {
     cursor:pointer;
 }
+/* Vs code text*/
+
+.textBox {
+    display:flex;
+    align-items: center;
+    border:none;
+    gap:1em;
+    position:relative;
+    font-size:1.5rem;
+    width:38vw;
+}
+.firstContainer {
+    width:100vw;
+}
+.pink {
+    color:#bd41a9;
+}
+.blue {
+    color:#4949ba;
+}
+.darkRed {
+    color:#d14847;
+}
+.textBox::before,
+.textBox::after {
+    content: "";
+    inset:0;
+    position:absolute;
+    z-index: 1000;
+    background-color:white;
+}
+.textBox::before {
+    background-color:white;
+    animation: typewriter 5s steps(49) 1s forwards;
+    animation-delay:5s;
+}
+.textBox::after {
+    width: 0.125em;
+    background-color:black;
+    animation: typewriter 5s steps(49) 1s forwards, blink 1000ms steps(49) infinite;
+    animation-delay:5s;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Terminal */
 .terminalMain {
