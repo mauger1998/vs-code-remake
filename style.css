@@ -402,3 +402,25 @@ header {
 }
 
 /* End Terminal */
+
+/* Portfolio Body */
+
+.mainPortfolioBody {
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    z-index: 10000000;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:5rem;
+    display:none;
+    animation: grow-in 1s forwards;
+    transform:scale(0.2)
+}
+@keyframes grow-in {
+    to {
+        transform:scale(1)
+    }
+}
