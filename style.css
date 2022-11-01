@@ -119,7 +119,7 @@ aside.blackAside {
     align-items: flex-start;
     list-style: none;
 }
-#highlight {
+.highlight {
     background-color:rgba(107, 107, 214, 0.295);
     width:100%;
     padding-top:0.3rem;
@@ -158,4 +158,10 @@ header {
     align-items: center;
     padding-right:2rem;
     
+}
+#noHighlight:hover {
+    cursor:pointer;
+}
+#highlight:hover {
+    cursor:pointer;
 }
