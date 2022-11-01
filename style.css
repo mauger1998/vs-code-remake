@@ -8,6 +8,12 @@
 }
 body {
     display:flex;
+    transition:transform 1s;
+    
+}
+.removeFromBody {
+    transform:scale(0.2);
+    transition:transform 1s;
 }
 .textBox {
     width:70vw;
@@ -60,6 +66,19 @@ aside.blackAside {
 .jsTab {
     border-right: 1px solid white;
     border-left: 1px solid white;
+}
+#rotate {
+    cursor:pointer;
+}
+.goBlue {
+    background-color:rgba(107, 107, 214, 0.295);
+    
+}
+.rotateArrow {
+    rotate:270deg;
+}
+.filesDissapear {
+    visibility: hidden;
 }
 .addToTab {
     

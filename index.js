@@ -57,6 +57,6 @@ downArrow.addEventListener("click", (e) => {
     })
 })
 
-
+onload(body.classList.remove("removeFromBody"))
 
 
