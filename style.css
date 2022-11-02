@@ -13,6 +13,7 @@ body {
     background-size:100vw 100vh; 
     background-repeat: no-repeat;
     z-index:-1;
+    overflow-x: hidden;
     
 }
 
@@ -440,4 +441,13 @@ header {
 ************
 ************
 ************/
+
+.mainPortfolioBody {
+    height:200vh;
+    overflow-x:hidden;
+}
+.portfolioFirstSection {
+    height:100vh;
+    text-align:center;
+}
 
