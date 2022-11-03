@@ -1052,7 +1052,39 @@ header svg {
 .portfolio-home__left {
     padding-bottom:10rem;
 }
-
+.portfolio-home__introduction h3 {
+    text-align:right;
+}
+.main-portfolio__second-section h2 {
+    font-size:5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+  outline: none;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: animate 10s linear infinite;
+  width:max-content;
+}
+#playing-cards {
+    width:100px;
+    
+}
+.second-section__card-container {
+    display:flex;
+    align-items: center;
+    padding-left:6.5rem;
+    padding-top:3rem;
+    gap:2rem
+}
+.main-portfolio__second-section p {
+    padding-left:6.5rem;
+    font-size:1.5rem;
+    width:50%;
+    padding-top:2.5rem;
+}
 
 
 
