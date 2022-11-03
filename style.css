@@ -21,8 +21,11 @@ body {
 
 
 
-/* Create vs code */
-.firstContainer {
+/**************** 
+Create vs code 
+*****************
+****************/
+.firstContainer__vs-code {
     background-color:white;
 }
 .vsCodeBody {
@@ -40,7 +43,7 @@ body {
     transform:scale(0.2);
     transition:transform 1s;
 } */
-.textBox {
+.vs-code__text-box {
     width:70vw;
     height:2rem;
     border:2px solid rgba(130, 127, 127, 0.7);
@@ -50,7 +53,7 @@ body {
     margin-right:2rem;
 
 }
-.textBox::before {
+.vs-code__text-box::before {
     content:"1";
     position:absolute;
     color:#2d2c33;
@@ -58,7 +61,7 @@ body {
     font-weight:500;
     font-size:large;
 }
-.pageName {
+.vs-code__page-name {
     margin-left:2rem;
     padding-top:0.5em;
     height:max-content;
@@ -72,14 +75,14 @@ body {
     color:blue;
     font-weight: 500;
 }
-aside.blackAside {
+aside.vs-code__black-aside {
     width:5vw;
     background-color: black;
     border:2px solid black;
     height:100vh;
 }
 
-.tabWrapper {
+.vs-code__tab-wrapper {
     display:flex;
     height:5vh;
     background-color:#e4e6e8;
@@ -110,7 +113,7 @@ aside.blackAside {
     background-color:white;
 }
 
-.tabWrapper div {
+.vs-code__tab-wrapper div {
     
     height:100%;
     align-items: center;
@@ -126,16 +129,16 @@ aside.blackAside {
 #orange {
     color:orange
 }
-.grayAside h5 {
+.vs-code__gray-aside h5 {
     font-size:1rem;
     font-weight:200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.grayAsideTop {
+.vs-code__gray-aside-top {
     padding-right:1rem;
 }
-.grayAside {
+.vs-code__gray-aside {
     width:20vw;
     height:100vh;
     background-color:#f3f3f3;
@@ -145,33 +148,33 @@ aside.blackAside {
     padding-top:1em;
     gap:1rem;
 }
-#file {
+#vs-code__file-icons {
     width:35px;
     opacity:0.75;
 }
-#split {
+#vs-code__split {
     display:flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.rightSide {
+.vs-code__right {
     display:flex;
     align-items: center;
     gap:1em;
     padding-right:1rem;
 }
-#secondFile {
+#vs-code__second-file {
     width:12px;
 }
-.blackAside {
+.vs-code__black-aside {
     display:flex;
     flex-direction: column;
     align-items: center;
     gap:4rem;
     padding-top: 2.5rem;
 }
-.grayAside ul {
+.vs-code__gray-aside ul {
     display:flex;
     flex-direction: column;
     gap:0.5rem;
@@ -185,7 +188,7 @@ aside.blackAside {
     padding-bottom:0.3rem;
     padding-left:1rem;
 }
-#noHighlight {
+#vs-code__no-highlight {
     padding-left:1rem;
 }
 #orange,
@@ -198,7 +201,7 @@ aside.blackAside {
     
 }
 
-.grayAsideTop {
+.vs-code__gray-aside-top {
     display:flex;
     justify-content: space-between;
     padding-left:2rem;
@@ -207,10 +210,10 @@ aside.blackAside {
     width:1.15rem;
     margin-left:0.75em;
 }
-.grayAsideTop p {
+.vs-code__gray-aside-top p {
     font-size:0.75em;
 }
-#theirHeader {
+#vs-code__header {
     display:flex;
     background-color:#e4e6e8;
     justify-content: space-between;
@@ -218,7 +221,7 @@ aside.blackAside {
     padding-right:2rem;
     
 }
-#noHighlight:hover {
+#vs-code__no-highlight:hover {
     cursor:pointer;
 }
 #highlight:hover {
@@ -235,7 +238,7 @@ aside.blackAside {
 
 /* Vs code text Animation */
 
-.textBox {
+.vs-code__text-box {
     display:flex;
     align-items: center;
     border:none;
@@ -244,7 +247,7 @@ aside.blackAside {
     font-size:1.5rem;
     width:32vw;
 }
-.firstContainer {
+.firstContainer__vs-code {
     width:100vw;
 }
 .pink {
@@ -256,20 +259,20 @@ aside.blackAside {
 .darkRed {
     color:#d14847;
 }
-.textBox::before,
-.textBox::after {
+.vs-code__text-box::before,
+.vs-code__text-box::after {
     content: "";
     inset:0;
     position:absolute;
     z-index: 1000;
     background-color:white;
 }
-.textBox::before {
+.vs-code__text-box::before {
     background-color:white;
     animation: typewriter 5s steps(49) 1s forwards;
     animation-delay:5s;
 }
-.textBox::after {
+.vs-code__text-box::after {
     width: 0.125em;
     background-color:black;
     animation: typewriter 5s steps(49) 1s forwards, blink 1000ms steps(49) infinite;
@@ -487,6 +490,7 @@ Copy past in obit
     width:10rem;
     height:7.5rem;
     
+    
 }
 
 
@@ -578,7 +582,7 @@ ul:hover li img {
     animation-delay:2000ms;
     transform-origin: center;
 }
-li:nth-child(6) {
+#sixthList {
     
     animation:li-six 1s forwards;
     animation-delay:2500ms;
@@ -885,7 +889,7 @@ header svg {
 .side-nav__ul {
     display:none;
 } 
-#myHeader {
+#portfolio__top-header {
     color:white;
     position:relative;
     height:10vh;
@@ -964,4 +968,5 @@ header svg {
 }
 .top-nav__ul li {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.25rem;
 }

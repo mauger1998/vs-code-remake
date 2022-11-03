@@ -1,13 +1,13 @@
-const grayAsideFileArray = Array.from(document.querySelectorAll(".sideLinks"))
-const pageName = document.querySelector(".pageNameP")
-const pageNameSpan = document.querySelector(".pageNameSpan")
+const grayAsideFileArray = Array.from(document.querySelectorAll(".vs-code__side-links"))
+const vsCode__pageName = document.querySelector(".vs-code__page-name-p")
+const vsCode__pageNameSpan = document.querySelector(".vs-code__page-nameSpan")
 const tabWrapper = document.querySelector(".tabWrapper")
 const htmlTab = document.querySelector(".htmlTab")
 const cssTab = document.querySelector(".cssTab")
 const jsTab = document.querySelector(".jsTab")
 const downArrow = document.getElementById("rotate")
-const downArrowContainer = document.getElementById("split")
-const explorerIcons = document.querySelectorAll("#secondFile")
+const downArrowContainer = document.getElementById("vs-code__split")
+const explorerIcons = document.querySelectorAll("#vs-code__second-file")
 const body = document.querySelector("body")
 
 
@@ -23,28 +23,29 @@ grayAsideFileArray.forEach(file => {
             htmlTab.classList.add("addToTab")
             jsTab.classList.remove("addToTab")
             cssTab.classList.remove("addToTab")
-            pageName.textContent = "index.html"
-            pageNameSpan.innerHTML = "<>"
-            pageNameSpan.setAttribute("id", "orange")
+            vsCode__pageName.textContent = "index.html"
+            vsCode__pageNameSpan.innerHTML = "<>"
+            vsCode__pageNameSpan.setAttribute("id", "orange")
         } else if (e.target == grayAsideFileArray[1]) {
             cssTab.classList.add("addToTab")
             htmlTab.classList.remove("addToTab")
             jsTab.classList.remove("addToTab")
-            pageName.textContent = "style.css"
-            pageNameSpan.innerHTML = "#"
-            pageNameSpan.setAttribute("id", "blue")
+            vsCode__pageName.textContent = "style.css"
+            vsCode__pageNameSpan.innerHTML = "#"
+            vsCode__pageNameSpan.setAttribute("id", "blue")
         } else if (e.target == grayAsideFileArray[2]) {
             jsTab.classList.add("addToTab")
             htmlTab.classList.remove("addToTab")
             cssTab.classList.remove("addToTab")
-            pageName.textContent = "script.js"
-            pageNameSpan.innerHTML = "JS"
-            pageNameSpan.setAttribute("id", "yellow")
+            vsCode__pageName.textContent = "script.js"
+            vsCode__pageNameSpan.innerHTML = "JS"
+            vsCode__pageNameSpan.setAttribute("id", "yellow")
         }
     })
 })
 
 downArrow.addEventListener("click", (e) => {
+    console.log("hey")
     downArrowContainer.classList.toggle("goBlue")
     downArrow.classList.toggle("rotateArrow")
     grayAsideFileArray.forEach(file => {
