@@ -855,6 +855,17 @@ Portfolio
     padding-bottom:15rem;
   
 }
+.portfolio-home__right__floating-text {
+    position:absolute;
+    bottom:8%;
+    font-size:1.5rem;
+    right:12%;
+    display:flex;
+    flex-direction: column-reverse;
+}
+.portfolio-home__right__floating-text p {
+    align-self:flex-end;
+}
 .portfolio-home__left button {
     padding:.75rem 2.5rem;
     border-radius:0.25em;
