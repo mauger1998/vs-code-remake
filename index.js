@@ -84,3 +84,13 @@ setTimeout (() => {
     portfolioBody.style.display = "flex"
 }, 11000)
 
+
+
+// Scroll into view
+//*****************
+const workButton_scrollTo = document.getElementById("work-button__scroll-here")
+const workButtonScroll = document.getElementById("scroll-to-work__button")
+
+workButtonScroll.addEventListener("click", () => {
+    workButton_scrollTo.scrollIntoView()
+})
