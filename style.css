@@ -496,8 +496,8 @@ Copy past in obit
 
 .orbit__li {
     position:absolute;
-    height:150px;
-    width:150px;
+    height:120px;
+    width:120px;
     border-radius:100%;
     display:grid;
     place-items: center;
@@ -511,7 +511,7 @@ Copy past in obit
     transform-origin: center;
     animation-duration: infinite;
     color:white;
-    font-size:2rem;
+    font-size:1.4rem;
     background-color:gray;
     height:100%;
     width:100%;
