@@ -806,9 +806,10 @@ Portfolio
    justify-content: center;
    gap:3rem;
    align-items: flex-start;
-   padding:5rem;
+   padding:2.5rem;
    width:50vw;
    padding-left:7rem;
+   
   
 }
 
@@ -851,7 +852,7 @@ Portfolio
     justify-content: center;
     align-items: center;
     padding:10rem;
-    padding-bottom:18rem;
+    padding-bottom:15rem;
   
 }
 .portfolio-home__left button {
