@@ -15,7 +15,6 @@ const explorerIcons = document.querySelectorAll("#vs-code__second-file")
 const body = document.querySelector("body")
 const mainPortfolioSection = document.querySelector("#portfolio__top-header")
 
-window.onload = mainPortfolioSection.scrollIntoView()
 
 
 grayAsideFileArray.forEach(file => {
