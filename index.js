@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger)
 
 
+
 const grayAsideFileArray = Array.from(document.querySelectorAll(".vs-code__side-links"))
 const vsCode__pageName = document.querySelector(".vs-code__page-name-p")
 const vsCode__pageNameSpan = document.querySelector(".vs-code__page-nameSpan")
@@ -12,6 +13,9 @@ const downArrow = document.getElementById("rotate")
 const downArrowContainer = document.getElementById("vs-code__split")
 const explorerIcons = document.querySelectorAll("#vs-code__second-file")
 const body = document.querySelector("body")
+const mainPortfolioSection = document.querySelector("#portfolio__top-header")
+
+window.onload = mainPortfolioSection.scrollIntoView()
 
 
 grayAsideFileArray.forEach(file => {
@@ -63,7 +67,7 @@ downArrow.addEventListener("click", (e) => {
 
 
 function loadFunction() {
-    body.classList.remove("removeFromBody")
+    // body.classList.remove("removeFromBody")
 }
 
 // Terminal
@@ -82,10 +86,10 @@ setTimeout(() => {
 }, 3500)
 
 //Portfolio Body
-const portfolioBody = document.querySelector(".mainPortfolioBody")
-setTimeout (() => {
-    portfolioBody.style.display = "flex"
-}, 1)
+// const portfolioBody = document.querySelector(".mainPortfolioBody")
+// setTimeout (() => {
+//     portfolioBody.style.display = "flex"
+// }, 1)
 
 
 
@@ -157,7 +161,7 @@ gsap.to(".lighting-image", {
         trigger:".my-skills",
         scrub:true,
         start:"top bottom",
-        end: "+=500"
+        end: "+=800"
     },
     opacity:1,
     rotateX:"0deg"
