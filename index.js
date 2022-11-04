@@ -1,3 +1,6 @@
+gsap.registerPlugin(ScrollTrigger)
+
+
 const grayAsideFileArray = Array.from(document.querySelectorAll(".vs-code__side-links"))
 const vsCode__pageName = document.querySelector(".vs-code__page-name-p")
 const vsCode__pageNameSpan = document.querySelector(".vs-code__page-nameSpan")
@@ -82,7 +85,7 @@ setTimeout(() => {
 const portfolioBody = document.querySelector(".mainPortfolioBody")
 setTimeout (() => {
     portfolioBody.style.display = "flex"
-}, 11000)
+}, 1)
 
 
 
@@ -97,17 +100,57 @@ workButtonScroll.addEventListener("click", () => {
 
 // SVG
 
-let path = document.querySelector("path")
-let pathLength = path.getTotalLength()
+// let path = document.querySelector("path")
+// let pathLength = path.getTotalLength()
 
-path.style.strokeDasharray = pathLength + " " + pathLength
+// path.style.strokeDasharray = pathLength + " " + pathLength
 
-path.style.strokeDashoffset = pathLength
+// path.style.strokeDashoffset = pathLength
 
-window.addEventListener("scroll", () => {
-    var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+// window.addEventListener("scroll", () => {
+//     var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
 
-    var drawLength = pathLength * scrollPercentage;
+//     var drawLength = pathLength * scrollPercentage;
 
-    path.style.strokeDashoffset = pathLength - drawLength
+//     path.style.strokeDashoffset = pathLength - drawLength
+// })
+
+// Scroll Trigger
+
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.to(".cards", {
+    scrollTrigger: {
+        trigger:".my-skills",
+        scrub:true,
+        start:"top bottom",
+        end:"+=450"
+    
+    },
+    x:0,
+    opacity:1,
+    rotateY:"360deg"
 })
+
+gsap.to(".my-skills", {
+    
+    scrollTrigger: {
+        trigger: ".my-skills",
+        scrub:true,
+    },
+    y: 1,
+    opacity:1,
+    delay:0.2
+})
+gsap.to(".para", {
+    scrollTrigger: {
+        trigger: ".my-skills",
+        scrub:true,
+        start:"top bottom",
+        end:"+=550"
+    },
+    opacity:1,
+    x:0,
+})
+
+

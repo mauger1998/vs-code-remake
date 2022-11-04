@@ -429,7 +429,7 @@ aside.vs-code__black-aside {
 
 .mainPortfolioBody {
     width:100vw;
-    height:200vh;
+    height:300vh;
     background-color:black;
     z-index: 10000000;
     color:white;
@@ -449,7 +449,7 @@ aside.vs-code__black-aside {
     font-size:2.5rem;
 }
 .mainPortfolioBody {
-    height:200vh;
+    height:300vh;
     width:100vw;
 }
 .main-portfolio__top-section {
@@ -990,7 +990,7 @@ header svg {
 .portfolio-home__below {
     position:absolute;
     text-align:center;
-    bottom:58%;
+    bottom:72%;
     left:25%;
     animation: fadeInUp 2s forwards ease;
     transform:translateY(500%);
@@ -1000,7 +1000,7 @@ header svg {
 }
 .portfolio-home__right__floating-text {
     position:absolute;
-    bottom:54%;
+    bottom:70%;
     font-size:1.5rem;
     right:12%;
     display:flex;
@@ -1107,11 +1107,18 @@ header svg {
 /***** Scroll snapping
 **********************/
 
-#scroll-to-work__button {
 
+.my-skills {
+    transform:translateY(150%);
+    opacity:0;
 }
-#work-button__scroll-here {
-
+.para {
+    transform:translateX(-10%);
+    opacity:0;
+}
+.cards {
+    transform: translateX(-50%) rotateY(90deg);
+    opacity:.2;
 }
 
 
@@ -1122,20 +1129,7 @@ header svg {
     }
 }
 
-/********SVG LINE********/
-.line-container {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    text-align:center;
-    overflow:hidden;
-}
-svg {
-    display:inline-block;
-    height:100%;
-}
+
 
 
 
