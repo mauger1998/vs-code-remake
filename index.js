@@ -152,5 +152,16 @@ gsap.to(".para", {
     opacity:1,
     x:0,
 })
+gsap.to(".lighting-image", {
+    scrollTrigger: {
+        trigger:".my-skills",
+        scrub:true,
+        start:"top bottom",
+        end: "+=500"
+    },
+    opacity:1,
+    rotateX:"0deg"
+
+})
 
 
